@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <title>Independent Women</title>
+    <style>
+        #menu {
+            position: fixed;
+            top: calc(4vw - 1vmax);
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            transition: color .3s cubic-bezier(.25,.46,.45,.94);
+            color: var(--header-color-default);
+            font-family: "Catamaran", sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            a { color:white} /* Globally */
+    
+        }
+
+    
+
+        #myVideo {
+            position: fixed; /* Stick to the bottom */
+            bottom: 0; /* Align bottom */
+            left: 0; /* Align left */
+            right: 0; /* Align right */
+            margin: auto; /* Center horizontally */
+            width: 50%; /* Set your desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        body{
+            background-color: black;
+        }
+        #smol {
+            display: none;  /* This hides #smol by default */
+            height: 100vh;
+            width: 100vw;
+            position: fixed;  /* Makes #smol cover the entire screen regardless of scrolling */
+            top: 0;           /* Aligns #smol to the top edge of the viewport */
+            left: 0;          /* Aligns #smol to the left edge of the viewport */
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(122,223,246,1) 30%, rgba(98,186,247,1) 100%);
+            justify-content: center; /* Center content horizontally */
+            align-items: center;     /* Center content vertically */
+            z-index: 1000;           /* Ensures #smol is above other content */
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #smol {
+                display: flex;   /* This makes #smol visible and formats it as a flex container */
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<div id="cc" style="position:fixed; z-index:9998; left:0px; top:0px; visibility: visible; width:100%; height:10px; background-color:#F96B0D;"></div>
+<div id="cc" style="position:fixed; z-index:9998; left:0px; top:0px; visibility: visible; width:10px; height:100%; background-image: linear-gradient(180deg, #F96B0D, #FA9500);"></div>
+<div id="cc" style="position:fixed; z-index:9998; left:0px; bottom:0px; visibility: visible; width:100%; height:10px; background-color:#FA9500;"></div>
+<div id="cc" style="position:fixed; z-index:9998; right:0px; bottom:0px; visibility: visible; width:10px; height:100%; background-image: linear-gradient(180deg, #F96B0D, #FA9500)"></div>
+
+
+
+
+
+<nav id = "menu" class="u-flx-ctr">
+    <h4>
+        <li style="padding-left:5px; padding-right:5px;"><a href=information.html>Information</a></li>
+        <li style="padding-left: 5px; padding-right: 5px;"><a href=index.html>In Search of Feminism and Identity in Asia</a></li>
+    </h4>
+</nav>
+<body> 
+    <div id= "background1" class="container">
+        <div class="box">
+            
+            <div>
+                <img src="IW_VIsual_Assets/SVG/Speaker 1.svg" onclick="clickButton('video1');" class= "zoom" width="187px;"></img>
+            </div>
+        
+        </div>
+
+        <div class="box">
+            <div>
+                <img src="IW_VIsual_Assets/SVG/Speaker 2.svg" onclick="clickButton('video2');" class= "zoom" width="230px;">
+            </div>
+        </div>
+
+        <div class="box">
+            <div>
+                <img src="IW_VIsual_Assets/SVG/Speaker 3.svg" onclick="clickButton('video3');" class= "zoom" width="138px;"></img>
+            </div>
+        </div>
+
+        <div class="box">
+            <div>
+                <img src="IW_VIsual_Assets/SVG/Speaker 4.svg" onclick="clickButton('video4');" class="zoom" width="110px;">
+            </div>
+        </div>
+    </div>
+
+    <video id="video1" width="1100"  class="hidden">
+        <source src="Audio + subtitle/Speaker_1_IW__.mp4" type="video/mp4">
+    </video> 
+
+    <video id="video2" width="800"  class="hidden">
+        <source src="Audio + subtitle/Speaker 2_IW.mp4" type="video/mp4">
+    </video> 
+    <video id="video3" width="800" class="hidden">
+        <source src="Audio + subtitle/Speaker3_IW.mp4" type="video/mp4">
+    </video>    
+
+    <video id="video4" width="800" class="hidden">
+        <source src="Audio + subtitle/Speaker_4_IW_.mp4" type="video/mp4">
+    </video>      
+
+    <video id="myVideo" autoplay loop muted>
+        <source src="Background Photos/IW_background_v3_1.mp4" type="video/mp4">
+    </video>
+
+    <div id="smol" style="height: 100vh; font-size: 28px; font-family: 'Catamaran', sans-serif; font-variation-settings: 'wght' 550; color: white;">
+    
+        <div style="align-self:center;">
+            <div class="justify">
+                <div style="text-align: center; width: 80vw;">
+                     Making this site responsive is taking some time. In the meantime, check it out on a desktop and make sure the browser window is wide enough. <br> Thanks!
+                    <br><br>
+                    <a href="https://www.instagram.com/wanjing_lili/" style="font-variation-settings: 'wght' 700; color: white;line-height: 1.4;">instagram</a> +
+                    <a href="mailto:wanjingli728@gmail.com" style="font-variation-settings: 'wght' 700; color: white;">email</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"> </script>
+</body>
+</html>
